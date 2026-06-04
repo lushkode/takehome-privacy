@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – takehome</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --orange: #E07B3A;
+      --orange-light: #FFF3E8;
+      --brown: #2D1A0A;
+      --gray: #6B6056;
+      --border: #F0E6D8;
+      --bg: #FFFCF9;
+    }
+    body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--brown); line-height: 1.7; }
+    header { background: #fff; border-bottom: 1px solid var(--border); padding: 20px 24px; display: flex; align-items: center; gap: 10px; }
+    .logo-icon { width: 36px; height: 36px; background: linear-gradient(135deg, #F5A623, #E07B3A); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+    .logo-text { font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 18px; }
+    .logo-text span { color: var(--orange); }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+    .hero { margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+    .badge { display: inline-block; background: var(--orange-light); color: var(--orange); font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: 36px; line-height: 1.2; margin-bottom: 12px; color: var(--brown); }
+    .updated { font-size: 13px; color: var(--gray); }
+    .intro-box { background: var(--orange-light); border-left: 3px solid var(--orange); border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 32px 0; font-size: 15px; color: var(--brown); }
+    section { margin-bottom: 40px; }
+    h2 { font-size: 18px; font-weight: 600; color: var(--brown); margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+    h2::before { content: ''; display: inline-block; width: 4px; height: 18px; background: var(--orange); border-radius: 2px; flex-shrink: 0; }
+    p { font-size: 15px; color: var(--gray); margin-bottom: 12px; }
+    ul { list-style: none; padding: 0; margin-bottom: 12px; }
+    ul li { font-size: 15px; color: var(--gray); padding: 6px 0 6px 20px; position: relative; }
+    ul li::before { content: '•'; color: var(--orange); position: absolute; left: 0; font-weight: 700; }
+    .highlight-box { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin: 16px 0; }
+    .highlight-box .label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--orange); margin-bottom: 8px; }
+    .check-list li::before { content: '✓'; color: #16A34A; }
+    .cross-list li::before { content: '✗'; color: #DC2626; }
+    a { color: var(--orange); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); font-size: 13px; color: var(--gray); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-icon">🏠</div>
+  <div class="logo-text">take<span>home</span></div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="badge">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: June 4, 2026</p>
+  </div>
+
+  <div class="intro-box">
+    <strong>The short version:</strong> takehome is designed to minimize the collection of personal information. Your paystub image is transmitted only for processing purposes and is not retained by takehome after analysis is complete. Only extracted financial numbers (not your name, SSN, or address) are saved — and only on your device.
+  </div>
+
+  <section>
+    <h2>What We Collect</h2>
+    <p>takehome is designed to collect as little data as possible. Here's exactly what happens when you use the app:</p>
+    <div class="highlight-box">
+      <div class="label">We DO collect</div>
+      <ul class="check-list">
+        <li>Payroll numbers you enter manually (hourly rate, hours, deductions)</li>
+        <li>Financial figures extracted from your paystub (gross pay, net pay, tax amounts)</li>
+        <li>App preferences and settings</li>
+      </ul>
+    </div>
+    <div class="highlight-box">
+      <div class="label">We do NOT intentionally collect</div>
+      <ul class="cross-list">
+        <li>Your name, Social Security Number (SSN), or address</li>
+        <li>Your employer's name or address</li>
+        <li>Your paystub image (it is not stored by takehome after processing)</li>
+        <li>Your location</li>
+        <li>Any account or login information</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>How Paystub Scanning Works</h2>
+    <p>When you scan a paystub, the following process occurs:</p>
+    <ul>
+      <li>Your paystub image is temporarily transmitted to our secure proxy server and then to Anthropic's AI API for analysis.</li>
+      <li>The AI extracts only financial numbers — hourly rate, gross pay, net pay, and tax deductions.</li>
+      <li>Personal identifying information (name, SSN, address) is explicitly excluded from extraction.</li>
+      <li>takehome does not store your paystub image after processing is complete. However, please note that transmission occurs through Anthropic's API infrastructure, which is governed by Anthropic's own privacy policy.</li>
+      <li>Only the extracted financial numbers are saved — locally on your device.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Third-Party Services</h2>
+    <p>takehome uses the following third-party service:</p>
+    <div class="highlight-box">
+      <div class="label">Anthropic API</div>
+      <p style="margin:0; font-size:14px; color: var(--gray);">Used to analyze paystub images. Images are transmitted for processing purposes only. Under Anthropic's API usage policy, submitted content is not used for model training. For details on how Anthropic handles data, please review their privacy policy. <a href="https://www.anthropic.com/privacy" target="_blank">Anthropic Privacy Policy →</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Data Storage</h2>
+    <p>All data saved by takehome is stored <strong>locally on your device only</strong>. We do not operate any database or backend server that stores your personal or financial data.</p>
+    <p>You can delete all stored data at any time by uninstalling the app.</p>
+  </section>
+
+  <section>
+    <h2>Data Sharing</h2>
+    <p>We do not sell, rent, or share your data with any third parties for marketing or advertising purposes. Period.</p>
+  </section>
+
+  <section>
+    <h2>California Residents (CCPA)</h2>
+    <p>Because takehome does not sell or share personal information and does not maintain user accounts, most requests regarding access, deletion, or portability can be fulfilled by deleting the data stored on your device. For additional requests, please contact us at the email below.</p>
+  </section>
+
+  <section>
+    <h2>Children's Privacy</h2>
+    <p>takehome is not directed at children under the age of 13. We do not knowingly collect information from children.</p>
+  </section>
+
+  <section>
+    <h2>Changes to This Policy</h2>
+    <p>If we make material changes to this Privacy Policy, we will update the "Last updated" date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+    <p><a href="mailto:lushkode@gmail.com">lushkode@gmail.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 takehome by lushkode. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
